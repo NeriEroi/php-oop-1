@@ -1,0 +1,23 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    font-family: monospace;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.primo_film,
+.secondo_film {
+    width: 30%;
+    height: 25%;
+    padding: 10px;
+}
+
+.primo_film {
+    border: 3px solid red;
+}
+
+.secondo_film {
+    border: 3px solid blue;
+}
