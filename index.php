@@ -15,8 +15,9 @@
         public function setTitle($_title) {
             if (strlen($_title) > 2) {
                 $this->title = $_title;
+                echo "<strong>Titolo del Film: </strong>". "<strong>$_title</strong>" . " - " . "Il film contiene più di due caratteri";
             } else {
-                echo "<strong>Titolo del Film: </strong>". "<strong>$_title</strong>" . " - " . "Il film contiene due caratteri";
+                echo "<strong>Titolo del Film: </strong>". "<strong>$_title</strong>" . " - " . "Il film contiene NON più di due caratteri";
             }
         }
     }
@@ -31,7 +32,7 @@
     $newMovie->director = 'Harmony Korine';
 
     // stampa metodo primo film
-    $newMovie->setTitle('Gummo');
+    // $newMovie->setTitle('Gummo');
 
     // stampa oggetto = primo film
     // var_dump($newMovie);
@@ -77,7 +78,9 @@
                 <?php var_dump($newMovie) ?>
             </div>
 
-
+            <h3>
+                <?php $newMovie->setTitle('Gummo') ?>
+            </h3>
         </div>
 
         <div class="secondo_film">
