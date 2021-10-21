@@ -94,7 +94,7 @@
             </div>
             
             <h3>
-                <?php $secondMovie->setTitle('Nu'); ?>
+                <?php $secondMovie->setTitle('Nu') ?>
             </h3>
 
         </div>
